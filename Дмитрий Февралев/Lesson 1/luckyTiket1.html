@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lesson 1</title>
+</head>
+
+<body>
+    <button onclick="git()">Посмотреть код на GitHub.com</button>
+
+	<script>
+		
+		function git() {
+			window.open( "https://github.com/jicool91/Java-Script/blob/master/\
+				%D0%94%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9%20%D0%A4%D0%B5%D0%B2%\
+				D1%80%D0%B0%D0%BB%D0%B5%D0%B2/Lesson%201/Celsius.html", "GitHub" );
+		}
+		
+    var ticket = +prompt('Введите шестизначное число билетика от 1 до 9');
+
+    var i, i1, i2, i3, i4, i5;
+
+    i = parseInt(ticket / 100000 % 10);
+    i1 = parseInt(ticket / 10000 % 10);
+    i2 = parseInt(ticket / 1000 % 10);
+    i3 = parseInt(ticket / 100 % 10);
+    i4 = parseInt(ticket / 10 % 10);
+    i5 = parseInt(ticket % 10);
+
+    alert((i + i1 + i2) === (i3 + i4 + i5) ? 'Билет счастливый' : 'Неудачка!');
+    </script>
+</body>
+
+</html>
